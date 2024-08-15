@@ -3,6 +3,7 @@ import Campus from "./Components/Campus/Campus"
 import Hero from "./Components/Hero/Hero"
 import Navbar from "./Components/Navbar/Navbar"
 import Program from "./Components/Program/Program"
+import Testimonial from "./Components/Testimonial/Testimonial"
 import Title from "./Components/Title/Title"
 
 const App = () => {
@@ -17,6 +18,8 @@ const App = () => {
         <About/>
         <Title subTitle='Gallery' title='Campus Photos' />
         <Campus/>
+        <Title subTitle='TESTIMONIALS' title='What Student Says' />
+        <Testimonial/>
       </div>
 
     </div>
