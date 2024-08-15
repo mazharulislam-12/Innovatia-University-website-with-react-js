@@ -47,28 +47,28 @@ const Testimonial = () => {
     }
 
     return (
-        <div className='testimonial' id='testomonials'>
-            <img src={next_icon} alt="" className='next-btn' onClick={slideForward} />
-            <img src={back_icon} alt="" className='back-btn' onClick={slideBackward} />
+        <div className='testimonial' id='testimonials'>
+            <img src={next_icon} alt="Next" className='next-btn' onClick={slideForward} />
+            <img src={back_icon} alt="Back" className='back-btn' onClick={slideBackward} />
 
             <div className='slider'>
                 <ul ref={slider}>
                     <li>
                         <div className="slide">
                             <div className="user-info">
-                                <img src={user_1} alt="" />
+                                <img src={user_1} alt="Sandra Emily" />
                                 <div>
                                     <h3>Sandra Emily</h3>
                                     <span>New York, USA</span>
                                 </div>
                             </div>
-                            <p>Edusity has provided me with the best educational resources and a supportive community that has helped me excel in my studies. The experience has been invaluable.</p>
+                            <p>Edusity has provided me with the best educational resources and a supportive community that has helped me excel in my studies.</p>
                         </div>
                     </li>
                     <li>
                         <div className="slide">
                             <div className="user-info">
-                                <img src={user_2} alt="" />
+                                <img src={user_2} alt="Maria Rodriguez" />
                                 <div>
                                     <h3>Maria Rodriguez</h3>
                                     <span>Madrid, Spain</span>
@@ -80,7 +80,7 @@ const Testimonial = () => {
                     <li>
                         <div className="slide">
                             <div className="user-info">
-                                <img src={user_3} alt="" />
+                                <img src={user_3} alt="Hiroshi Tanaka" />
                                 <div>
                                     <h3>Hiroshi Tanaka</h3>
                                     <span>Tokyo, Japan</span>
@@ -92,7 +92,7 @@ const Testimonial = () => {
                     <li>
                         <div className="slide">
                             <div className="user-info">
-                                <img src={user_4} alt="" />
+                                <img src={user_4} alt="Aisha Khan" />
                                 <div>
                                     <h3>Aisha Khan</h3>
                                     <span>Dubai, UAE</span>

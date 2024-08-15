@@ -1,16 +1,31 @@
-.campus{
+.campus {
     margin: 80px auto;
     width: 90%;
     text-align: center;
 }
-.gallery{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 40px;
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
+    gap: 10px; /* Add spacing between images */
+    justify-content: center;
+    margin-bottom: 40px;
 }
-.gallery img{
-    width: 23%;
+
+.gallery img {
+    width: calc(25% - 10px); /* Adjust width to fit four images in a row with gap */
     border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .gallery img {
+        width: calc(50% - 10px); /* Adjust width for tablets (2 images per row) */
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery img {
+        width: calc(100% - 10px); /* Adjust width for mobile (1 image per row) */
+    }
 }

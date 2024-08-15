@@ -1,20 +1,26 @@
-.programs{
+.programs {
     margin: 80px auto;
     width: 90%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap; /* Added to make items wrap on smaller screens */
 }
-.program img{
+
+.program {
+    flex-basis: 100%; /* Full width on smaller screens */
+    max-width: 300px; /* Max width for each program item */
+    position: relative;
+    margin-bottom: 20px; /* Space between items */
+}
+
+.program img {
     width: 100%;
     border-radius: 10px;
     display: block;
 }
-.program{
-    flex-basis: 31%;
-    position: relative;
-}
-.caption{
+
+.caption {
     border-radius: 10px;
     position: absolute;
     top: 0;
@@ -31,15 +37,27 @@
     opacity: 0;
     padding-top: 70%;
     transition: 0.4s;
-
-
 }
-.caption img{
+
+.caption img {
     width: 60px;
     margin-bottom: 10px;
 }
-.program:hover .caption{
+
+.program:hover .caption {
     opacity: 1;
     padding-top: 0;
+}
 
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .program {
+        flex-basis: 48%; /* 2 items per row */
+    }
+}
+
+@media (min-width: 1024px) {
+    .program {
+        flex-basis: 31%; /* 3 items per row */
+    }
 }
