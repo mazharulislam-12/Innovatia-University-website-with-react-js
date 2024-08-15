@@ -6,26 +6,25 @@
 
 .gallery {
     display: flex;
-    flex-wrap: wrap; /* Allow images to wrap on smaller screens */
-    gap: 10px; /* Add spacing between images */
+    flex-wrap: wrap;
+    gap: 10px;
     justify-content: center;
     margin-bottom: 40px;
 }
 
 .gallery img {
-    width: calc(25% - 10px); /* Adjust width to fit four images in a row with gap */
+    width: calc(25% - 10px);
     border-radius: 10px;
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .gallery img {
-        width: calc(50% - 10px); /* Adjust width for tablets (2 images per row) */
+        width: calc(50% - 10px);
     }
 }
 
 @media (max-width: 480px) {
     .gallery img {
-        width: calc(100% - 10px); /* Adjust width for mobile (1 image per row) */
+        width: calc(100% - 10px);
     }
 }

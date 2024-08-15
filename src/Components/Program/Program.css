@@ -4,14 +4,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap; /* Added to make items wrap on smaller screens */
+    flex-wrap: wrap;
 }
 
 .program {
-    flex-basis: 100%; /* Full width on smaller screens */
-    max-width: 300px; /* Max width for each program item */
+    flex-basis: 100%;
+    max-width: 300px;
     position: relative;
-    margin-bottom: 20px; /* Space between items */
+    margin-bottom: 20px;
 }
 
 .program img {
@@ -49,15 +49,14 @@
     padding-top: 0;
 }
 
-/* Responsive Styles */
 @media (min-width: 768px) {
     .program {
-        flex-basis: 48%; /* 2 items per row */
+        flex-basis: 48%;
     }
 }
 
 @media (min-width: 1024px) {
     .program {
-        flex-basis: 31%; /* 3 items per row */
+        flex-basis: 31%;
     }
 }
